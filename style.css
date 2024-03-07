@@ -1,0 +1,392 @@
+*{
+    padding:0px;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+    list-style: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    z-index: 2;
+}
+
+
+.container{
+    height: 120vh;
+    width: 100%;
+    background-image: url(./assests/Logo.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+
+
+}
+
+.container::after{
+   content: '';
+   position: absolute; 
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   z-index: 1;
+   background: rgb(0, 0, 0, 0.6);
+   box-shadow: inset 10px 50px 500px #000000, inset -150px -50px 250px;
+
+}
+
+.navbar{
+    width:auto;
+    margin: auto;
+    padding: 10px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+
+}
+
+.logo{
+    width: 250px;
+    cursor: pointer;
+    padding-right: 70px;
+    position: absolute;
+
+
+
+}
+
+.navbar ul li{
+    list-style: none;
+    display:inline-block;
+    margin: 0 15px;
+    position: relative;
+ 
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color:#de0f3f;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.navbar ul li span{
+    color: whitesmoke;
+}
+
+.navbar ul li:hover{
+    
+    background-color: darkslategrey;
+    border-radius: 100%;
+}
+
+.navbar ul li a.active{
+    background-color: darkslategrey;
+    border-radius: 100%;
+    
+}
+
+.navbar img {
+    position: relative;
+    z-index: 2;
+}
+
+.content-wrapper {
+    background: linear-gradient(to bottom, #de0f3f, dar);
+    border: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.Home,
+.portfolio {
+    padding: 2px;
+}
+
+.content{
+    width: 100%;
+    position: absolute;
+    top: 30%;
+    z-index: 2;
+}
+
+.left-col{
+    margin-left: 10%;
+}
+
+.left-col h1{
+    font-size: 60px;
+    font-weight:900;
+    color: #de0f3f;
+    line-height: 80px;
+    float: left;
+    text-transform: capitalize;
+}
+
+.left-col span{
+    font-size: 70px;
+    font-weight: 900;
+    color: whitesmoke;
+    line-height: 80px;
+    float: left;
+    text-transform: capitalize;
+}
+
+.right-col{
+    float: right;
+    margin-right:6%;
+    margin-top: 120px;
+    display: flex;
+    align-items: center;
+}
+
+.right-col p{
+    font-size: 30px;
+    color: whitesmoke;
+    font-weight: 500;
+    margin-right: 15px;
+
+}
+
+.right-col span{
+    color: #de0f3f;
+}
+
+#playPauseButton{
+    cursor: pointer;
+    color: whitesmoke;
+    display: inline-block;
+}
+
+#playPauseButton:hover{
+    color: #de0f3f;
+    transition: ease-in-out 6s;
+    transform: scale(1.2);
+}
+
+
+/* porfolio */
+
+.Portfolio{
+    height: 120vh;
+    width: 100%;
+    background-image: url(./assests/Dj\ Tev\ 5.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    border-bottom: 2px solid whitesmoke;
+    padding-bottom: 20px;
+
+}
+
+.Portfolio::after{
+    content: '';
+    position: absolute; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background: rgb(0, 0, 0, 0.6);
+    box-shadow: inset 5px 50px 300px #000000, inset -250px -100px 300px;
+ 
+ }
+
+
+
+ .content1{
+    width: 100%;
+    position: absolute;
+    top: 30%;
+    z-index: 2;
+}
+
+.left-column{
+    margin-left: 10%;
+}
+
+.left-column h2{
+    font-size: 60px;
+    font-weight:900;
+    color: #de0f3f;
+    line-height: 80px;
+    float: left;
+    text-transform: capitalize;
+}
+
+.left-column span{
+    color: whitesmoke;
+    text-transform: capitalize;
+}
+
+.right-column{
+    float: right;
+    margin-right:6%;
+    margin-top: 120px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+
+}
+
+.right-column p{
+    font-size: 30px;
+    color: whitesmoke;
+    font-weight: 900;
+    margin-right: 15px;
+    margin-bottom: 20px;
+
+}
+
+.right-column span{
+    color: #de0f3f;
+}
+
+.right-column .social-links{
+    margin-top: 20px;
+   
+    
+}
+
+.right-column .social-links a{
+    color: #de0f3f;
+    display:inline-flexbox;
+    flex-wrap: wrap;
+
+}
+
+.right-column .social-links a+a{
+    margin-left: 10px;
+}
+
+/* contact */
+
+.contact{
+    height: 120vh;
+    width: 100%;
+    background-image: url(./assests/club\ 8.png);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    border-top: 2px solid whitesmoke;
+    padding-top: 20px;
+
+}
+.contact::after{
+    content: '';
+    position: absolute; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background: rgb(0, 0, 0, 0.6);
+    box-shadow: inset 5px 50px 300px #000000, inset -250px -100px 300px;
+ 
+ }
+
+ .content2{
+    width: 100%;
+    position: absolute;
+    top: 30%;
+    z-index: 2;
+}
+.left-columns{
+    margin-left: 10%;
+    margin-top: 20px;
+}
+.left-columns p{
+    font-size: 33px;
+    font-weight:600;
+    color: #de0f3f;
+    line-height: 40px;
+    float: left;
+    text-transform: capitalize;
+}
+.left-columns span{
+    color: whitesmoke;
+    text-transform: capitalize;
+}
+.left-columns p a {
+    display: inline-block;
+    padding: 5px;
+    color: white;
+    text-decoration: none;
+
+}
+
+.left-columns p a:hover,
+.left-columns p a:focus {
+    background-color: whitesmoke;
+    border-radius: 100%;
+
+}
+
+
+
+.left-columns  i{
+    color: #de0f3f;
+    display:inline-flexbox;
+    flex-wrap: wrap;
+    margin-top: 30px;
+   
+
+}
+
+.left-columns i+i{
+    margin-left: 10px;
+    
+}
+
+.right-columns{
+    float: right;
+    margin-right:6%;
+    margin-top: 2px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+
+}
+.right-columns p{
+    font-size: 30px;
+    color: whitesmoke;
+    font-weight: 900;
+    margin-right: 15px;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+    word-spacing: 10px;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+    line-height: 2;
+
+}
+
+@media only screen and (max-width: 768px) {
+    .right-columns p {
+        line-height: 1.2; /* Adjusted line height for smaller screens */
+    }
+}
+
+.right-columns span{
+    color: #de0f3f;
+}
+
+
+.right-columns .a{
+    margin-top: 20px;
+    
+}
+
+.right-columns .fa-envelope{
+    color: #de0f3f;
+}
+
+
+
+
+
+
+
