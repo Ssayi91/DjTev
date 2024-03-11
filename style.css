@@ -260,6 +260,24 @@
     margin-left: 10px;
 }
 
+#seeMoreButton {
+    background-color:#de0f3f;
+    color: #fff; 
+    padding: 10px 20px; 
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 5s ease ease-in-out;
+}
+
+#seeMoreButton:hover {
+    background-color: inherit;
+}
+
+.gallery a img {
+    max-width: none;
+}
+    
 /* contact */
 
 .contact{

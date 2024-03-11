@@ -27,6 +27,24 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
+document.addEventListener("DOMContentLoaded", function () {
+    // Get references to the button and the gallery section
+    var seeMoreButton = document.getElementById("seeMoreButton");
+    var gallery = document.getElementById("gallery");
+
+    // Add click event listener to the button
+    seeMoreButton.addEventListener("click", function () {
+        // Toggle the visibility of the gallery section
+        if (gallery.style.display === "none") {
+            gallery.style.display = "block";
+            seeMoreButton.textContent = "See Less"; // Change button text
+        } else {
+            gallery.style.display = "none";
+            seeMoreButton.textContent = "See More"; // Change button text
+        }
+    });
+});
+
 // Get the logo element
 var logo = document.getElementById('logo');
 
