@@ -28,19 +28,19 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 });
 
 document.addEventListener("DOMContentLoaded", function () {
-    // Get references to the button and the gallery section
+  
     var seeMoreButton = document.getElementById("seeMoreButton");
     var gallery = document.getElementById("gallery");
 
     // Add click event listener to the button
     seeMoreButton.addEventListener("click", function () {
-        // Toggle the visibility of the gallery section
+        
         if (gallery.style.display === "none") {
             gallery.style.display = "block";
-            seeMoreButton.textContent = "See Less"; // Change button text
+            seeMoreButton.textContent = "See Less"; 
         } else {
             gallery.style.display = "none";
-            seeMoreButton.textContent = "See More"; // Change button text
+            seeMoreButton.textContent = "See More";
         }
     });
 });
@@ -50,10 +50,9 @@ var logo = document.getElementById('logo');
 
 // Listen for the scroll event
 window.addEventListener('scroll', function() {
-    // Calculate the new position for the logo based on the scroll position
-    var scrollPosition = window.scrollY;
-    var newPosition = scrollPosition * 0.5; // Adjust the multiplier as needed
     
-    // Apply the new position to the logo
+    var scrollPosition = window.scrollY;
+    var newPosition = scrollPosition * 0.5; 
+    
     logo.style.transform = 'translateY(' + newPosition + 'px)';
 });
