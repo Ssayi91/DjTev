@@ -256,6 +256,10 @@
 
 }
 
+.right-column .social-links a:hover{
+    color:whitesmoke;
+}
+
 .right-column .social-links a+a{
     margin-left: 10px;
 }
@@ -283,7 +287,7 @@
 .contact{
     height: 120vh;
     width: 100%;
-    background-image: url(./assests/club\ 8.png);
+    background-image: url(./assests/club\ 8.jpg);
     background-size: cover;
     background-position: center;
     position: relative;
@@ -334,11 +338,8 @@
 
 }
 
-.left-columns p a:hover,
-.left-columns p a:focus {
-    background-color: whitesmoke;
-    border-radius: 100%;
-
+.left-columns p a i:hover{
+    color: whitesmoke;
 }
 
 
@@ -384,7 +385,7 @@
 
 @media only screen and (max-width: 768px) {
     .right-columns p {
-        line-height: 1.2; /* Adjusted line height for smaller screens */
+        line-height: 1.2;
     }
 }
 
@@ -393,14 +394,17 @@
 }
 
 
-.right-columns .a{
-    margin-top: 20px;
-    
+
+.right-columns a i:hover{
+    color: whitesmoke;
+    transition: ease-in-out 5s #de0f3f;
 }
 
-.right-columns .fa-envelope{
-    color: #de0f3f;
+.right-columns i{
+    color:#de0f3f;
 }
+
+
 
 
 
