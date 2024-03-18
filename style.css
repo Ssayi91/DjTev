@@ -272,6 +272,8 @@
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 5s ease ease-in-out;
+    font: 30px;
+    font-weight: 500;
 }
 
 #seeMoreButton:hover {
@@ -339,7 +341,7 @@
 }
 
 .left-columns p a i:hover{
-    color: whitesmoke;
+    color: inherit;
 }
 
 
