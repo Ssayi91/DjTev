@@ -385,7 +385,7 @@
 
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 100%) {
     .right-columns p {
         line-height: 1.2;
     }
