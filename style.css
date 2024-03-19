@@ -264,6 +264,14 @@
     margin-left: 10px;
 }
 
+.gallery{
+    display: none;
+}
+
+.gallery a img {
+    max-width: none;
+}
+
 #seeMoreButton {
     background-color:#de0f3f;
     color: #fff; 
@@ -280,9 +288,7 @@
     background-color: inherit;
 }
 
-.gallery a img {
-    max-width: none;
-}
+
     
 /* contact */
 
